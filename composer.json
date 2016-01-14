@@ -24,7 +24,8 @@
         "zendframework/zend-expressive-fastroute": "^0.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.1"
+        "phpunit/phpunit": "^5.1",
+        "squizlabs/php_codesniffer": "^2.3"
     },
     "authors": [
         {

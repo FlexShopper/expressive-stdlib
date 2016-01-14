@@ -1,0 +1,15 @@
+language: php
+php:
+  - 7
+
+install:
+  - travis_retry composer install --no-interaction -o
+
+script:
+  - php vendor/squizlabs/php_codesniffer/scripts/phpcs
+  - php vendor/bin/codecept run
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
