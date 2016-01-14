@@ -1,0 +1,35 @@
+{
+    "name": "flexshopper/expressive-stdlib",
+    "autoload": {
+        "psr-4": {
+            "StdLib\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StdLib\\Test\\": "test/src/Test",
+            "StdLib\\Fixture\\": "test/fixtures"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "require": {
+        "zendframework/zend-expressive": "^0.5.3",
+        "videlalvaro/php-amqplib": "^2.6",
+        "symfony/console": "^3.0",
+        "doctrine/orm": "^2.5",
+        "zendframework/zend-servicemanager": "^2.5",
+        "zendframework/zend-validator": "^2.5",
+        "zendframework/zend-expressive-fastroute": "^0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.1"
+    },
+    "authors": [
+        {
+            "name": "Andres Galindo",
+            "email": "andres.galindo@flexshopper.com"
+        }
+    ]
+}
