@@ -2,6 +2,8 @@
 
 use StdLib\Console\ApplicationFactory;
 use StdLib\Console\Application;
+use StdLib\Validator\OptionExtractorFactory;
+use StdLib\Validator\OptionsExtractor;
 use StdLib\Validator\ValidationMiddleware;
 use StdLib\Validator\ValidationMiddlewareFactory;
 use StdLib\Validator\Validator;
@@ -19,6 +21,7 @@ return [
             Application::class          => ApplicationFactory::class,
             Validator::class            => ValidatorFactory::class,
             ValidationMiddleware::class => ValidationMiddlewareFactory::class,
+            OptionsExtractor::class     => OptionExtractorFactory::class
         ]
     ]
 ];
