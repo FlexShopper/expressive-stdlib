@@ -3,16 +3,16 @@
     "autoload": {
         "psr-4": {
             "StdLib\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
             "StdLib\\Test\\": "test/src/Test",
             "StdLib\\Fixture\\": "test/fixtures"
-        },
-        "files": [
-            "src/Helpers/helpers.php"
-        ]
+        }
     },
     "require": {
         "zendframework/zend-expressive": "^0.5.3",
