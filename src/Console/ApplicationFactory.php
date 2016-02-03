@@ -14,7 +14,7 @@ class ApplicationFactory
     {
         $loadDev = is_null($loadDev) ? defined('IS_DEV') && IS_DEV : $loadDev;
         $config = $container->get('config');
-        $app = new Application('Billing Console', $config['app_version']);
+        $app = new Application($config['app_console_name'], $config['app_version']);
 
         foreach (glob($config['app_root_path'] . '/*modules/*/src/Console/Command/*Command.php') as $file) {
             $devRegex = $loadDev ? '(?:dev-)?' : '';

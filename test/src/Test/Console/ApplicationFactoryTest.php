@@ -23,6 +23,7 @@ class ApplicationFactoryTest extends \PHPUnit_Framework_TestCase
                         switch ($resource) {
                             case 'config':
                                 return new \ArrayObject([
+                                    'app_console_name' => 'Test',
                                     'app_root_path' => TEST_ROOT_PATH . '/fixtures/application-factory-test',
                                     'app_version'   => '1.0.0-test'
                                 ]);
@@ -47,6 +48,7 @@ class ApplicationFactoryTest extends \PHPUnit_Framework_TestCase
                 switch ($resource) {
                     case 'config':
                         return new \ArrayObject([
+                            'app_console_name' => 'Test',
                             'app_root_path' => TEST_ROOT_PATH . '/StdLib/fixtures/application-factory-test',
                             'app_version'   => '1.0.0-test'
                         ]);
